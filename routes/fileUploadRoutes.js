@@ -126,7 +126,7 @@ router.post("/summarize", async (req, res) => {
 router.post("/ask", async (req, res) => {
   try {
     const { documentId, question } = req.body;
-    console.log("Received Document ID:", documentId); // Log the documentId
+    // console.log("Received Document ID:", documentId); // Log the documentId
 
     // Find the document by ID
     const document = await Document.findById(documentId);
